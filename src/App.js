@@ -1,29 +1,33 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import './App.css';
 
 import Home from './pages/Home';
 import Recipes from './pages/Recipes';
 import RecipesPlus from './pages/RecipesPlus';
 import SingleRecipe from './pages/SingleRecipe';
-import NavBar from './components/NavBar';
+import Layout from './pages/Layout';
+import WrongPage from './pages/WrongPage';
 
-const RouterWrapper  = (props) => {
-  const params = useParams();
+// const RouterWrapper  = (props) => {
+//   const params = useParams();
 
-  return <SingleRecipe params={params} {...props} /> //props can be used to pass properties
+//   return <SingleRecipe params={params} {...props} /> //props can be used to pass properties
 
-};
+// };
  
  const App = () => {
-  <NavBar />
   return (
     <BrowserRouter>
     <Routes>
-        <Route path="/" element={<Home />}    />
+      <Route path='/' element={<Layout />} >
+        <Route index element={<Home />}    />
         <Route path="recipes" element={<Recipes />} />
+        <Route path="singlerecipe" element={<SingleRecipe />} />
+        <Route path="recipes/:singlerecipe" element={<SingleRecipe />} />
         <Route path="recipesplus" element={<RecipesPlus />} />
-          <Route path="recipesplus/:singlerecipe" element={<RouterWrapper />} />
+        <Route path='*'  element={<WrongPage />} />
+      </Route>
     </Routes>
     </BrowserRouter>
   );

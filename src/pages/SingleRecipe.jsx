@@ -1,32 +1,42 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import {  useParams, useNavigate} from 'react-router-dom';
+import axios from 'axios';
+
 
 const SingleRecipe = () => {
-    let navigate = useNavigate();
-    const handleNavigate = () => {
-        navigate(-1)
+    const params = useParams();
+    const navigate = useNavigate();
+    const [ data, setData ] = useState({});
+    const [ isLoading, setIsloading ] = useState(false);
+
+    useEffect(() => {
+        setIsloading(true);
+        axios.get(`http://localhost:3001/recipes/${params.singlerecipe}`).then(res => {
+            setData(res.data);
+            console.log('single', res.data);
+            setIsloading(false);
+        });
+    }, [params]);
+
+    if (isLoading) {
+        return <p> Loading......</p>
     }
-    return (
-        <div className="see-more">
-                <h1>name</h1>
-                <div className="top-section">
-                <img src="https://images.unsplash.com/photo-1618641986557-1ecd230959aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" alt="name" />
-                <h2>name</h2>
-                <h2>author</h2>
-                </div>
-                <div className="middle-section">
-                    <table className="ingredients">
-                        <th>Ingredients</th>
-                        <tr><td>1l water</td></tr>
-                    </table>
-                    <table className="preparation">
-                        <th>Preparation</th>
-                        <tr><td>Soup good! Me like it!</td></tr>
-                    </table>
-                </div>  
-                <button type='button' onClick={handleNavigate}>Go Back</button>    
-            </div>
-    );
-};
+
+        return ( 
+            <div>
+            <h2>{data.name}</h2>
+             <p>{data.author}</p>
+             <p>{data.country}</p>
+             <p>{data.description}</p>
+            <img src={data.image} alt={data.name}/>
+            <p>{data.ingredients}</p>
+            <p>{data.instruction}</p>
+            <button onClick={()=> navigate(-1)}>Go back</button>
+        </div>
+        );       
+    }  
 
 export default SingleRecipe;
+
+
+

@@ -8,6 +8,7 @@ const [ countryList, setCountryList ] = useState([]);
 const [ingred, setIngred] = useState([{id: 1, item:'', quantity:''}])
 // const [isLoading, setIsLoading] = useState(false);
 const [ uploadRecipe, setUploadRecipe ] = useState({
+        id: '',
         name: '',
         author: '',
         country: '',
@@ -21,7 +22,6 @@ const [ uploadRecipe, setUploadRecipe ] = useState({
       
 const inputHandler = (e) => {
       setUploadRecipe({...uploadRecipe,  [e.target.name]:e.target.value})
-      console.log('recipe:', uploadRecipe)
     };
 
 const ingredientHandler = (e, index) => {
@@ -46,7 +46,6 @@ const addMoreInputsHandler = (e) => {
 
 const postHandler = (e) => {
     axios.post("http://localhost:3001/recipes", uploadRecipe)
-    console.log('recipe:', uploadRecipe)
     }
     
 const submitHandler = (e) => {
@@ -102,7 +101,7 @@ console.log('RestAPI:', countries);
                 <div className="form-group">
                 <label htmlFor="countries">Recipe Source</label>
                 <select name="country" onChange={inputHandler}>
-                <option selected="selected">Select a country</option>
+                <option value="selected">Select a country</option>
                 {countryList.map((index) => {
             return ( <option value={index} key={index}>{index}</option>);
             })}</select>

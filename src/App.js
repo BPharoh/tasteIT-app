@@ -23,7 +23,6 @@ import WrongPage from './pages/WrongPage';
       <Route path='/' element={<Layout />} >
         <Route index element={<Home />}    />
         <Route path="recipes" element={<Recipes />} />
-        <Route path="singlerecipe" element={<SingleRecipe />} />
         <Route path="recipes/:singlerecipe" element={<SingleRecipe />} />
         <Route path="recipesplus" element={<RecipesPlus />} />
         <Route path='*'  element={<WrongPage />} />

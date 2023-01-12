@@ -12,11 +12,26 @@ const [ uploadRecipe, setUploadRecipe ] = useState({
         author: '',
         country: '',
         description: '',
-        flag: '',
+        flagurl: '',
         image: '',
         instructions: [],
         ingredients: []
         });
+
+useEffect(() => {
+    // setIsLoading(true)
+    axios.get('https://restcountries.com/v3.1/all/')
+    .then((res) => {
+    let countries = [];
+    res.data.map((item) => { 
+    countries.push(item.name.common);
+    countries.sort();
+    return(countries)
+    })
+    setCountryList(countries);
+    console.log('RestAPI:', res.data);
+    });
+    }, []);
       
       
 const inputHandler = (e) => {
@@ -72,23 +87,6 @@ const submitHandler = (e) => {
       window.location.reload()
     };
 
-
-
-useEffect(() => {
-// setIsLoading(true)
-axios.get('https://restcountries.com/v3.1/all/')
-.then((response) => {
-let countries = [];
-response.data.map((item) => { 
-    countries.push(item.name.common);
-    countries.sort();
-    return(countries)
-})
-setCountryList(countries);
-console.log('RestAPI:', countries);
-});
-}, []);
-
     return (
         <div>
             <h1>Add new recipe</h1>
@@ -133,23 +131,23 @@ console.log('RestAPI:', countries);
                     />
                 </div>
                 <p>Ingredients</p>
+                <div className="ingredientHeader">
+                <span htmlFor="item">Item</span>
+                <span htmlFor="quantity">Quantity</span>
+                </div>
                 {ingredient.map((singleIngredient, index) => {
                     return ( 
                     <div key={index}>
-                    <div className="add-more" >
-                    <div>
-                    <label htmlFor="item">Item</label>
+                    <div className="add-ingredients" >
+                    <div className="add-more">
                     <input type="text" name="item" id="item" value={singleIngredient.item} onChange={(e) => ingredientsHandler(e, index)}/>
-                    </div>
-                    <div>
-                    <label htmlFor="quantity">Quantity</label>
                     <input type="text" name="quantity" id="quantity" value={singleIngredient.quantity} onChange={(e) => ingredientsHandler(e, index)}/>
-                    </div>
-                    {(ingredient.length - 1 === index ) && (ingredient.length < 40) && (<button type='button' onClick={addMoreInputsHandler}>add more</button>)}
                     </div>
                     <div className="remove more">
                         {ingredient.length > 1 && ( <button type='button' onClick={() => {removeMoreInputsHandler(index)}}>remove more</button>)}
                     </div>
+                    </div>
+                    {(ingredient.length - 1 === index ) && (ingredient.length < 40) && (<button type='button' onClick={addMoreInputsHandler}>add more</button>)}
                     </div>
                 );
                 })}
@@ -157,6 +155,7 @@ console.log('RestAPI:', countries);
                 {instruction.map((allInstructions, index) => {
                     return ( 
                 <div className="form-group instructions" key={index}>
+                    <div className='instructions-group'>
                     <div className="first-part">
                     <input 
                     type="text"
@@ -164,11 +163,13 @@ console.log('RestAPI:', countries);
                     value={allInstructions.instructions}
                     onChange={(e) => instructionsHandler(e, index)}
                     />
-                    {(instruction.length - 1 === index ) && (instruction.length < 40) && (<button type='button' onClick={addMoreInstructionsHandler}>+ Instruction Steps</button>)}
                     </div>
                     <div className="second-part">
                 {instruction.length > 1 && ( <button type='button' onClick={() => {removeMoreInstructionsHandler(index)}}>remove steps</button>)}
                 </div>
+                </div>
+                
+                {(instruction.length - 1 === index ) && (instruction.length < 40) && (<button type='button' onClick={addMoreInstructionsHandler}>+ Instruction Steps</button>)}
                 </div>
                  );
                 })}

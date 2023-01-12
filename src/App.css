@@ -12,3 +12,8 @@
     display: flex;
     flex-direction: row;
 }
+
+.add-ingredients {
+    display: flex;
+    flex-direction: row;
+}

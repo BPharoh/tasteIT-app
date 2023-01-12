@@ -6,283 +6,6 @@
       "author": "Alexander",
       "country": "Nigeria",
       "description": "Soup for swallow",
-      "image": "https://images.unsplash.com/photo-1618588590706-bac3c25b3d41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW5zdHJ1Y3Rpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-      "ingredients": "egusi",
-      "instructions": "hello"
-    },
-    {
-      "id": 2,
-      "name": "testing instructions",
-      "author": "Alexander",
-      "country": "Central African Republic",
-      "description": "hhghghhghghghghghghfkkfkfkfkkfkfkkkkk fjjfjfjfjjfjjjff",
-      "image": "https://images.unsplash.com/photo-1618588590706-bac3c25b3d41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW5zdHJ1Y3Rpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-      "ingredients": [],
-      "instructions": "khkhkhkhkhkhkhkhkhkkh",
-      "item": "t",
-      "quantity": "6"
-    },
-    {
-      "id": 3,
-      "name": "rrrtrttt",
-      "author": "frrrtttrrttr",
-      "country": "Afghanistan",
-      "description": "ytyttyyty",
-      "flag": "",
-      "ingredients": [
-        {
-          "item": "",
-          "quantity": ""
-        }
-      ],
-      "image": "https://images.unsplash.com/photo-1533561797500-4fad4750814e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW5zdHJ1Y3Rpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-      "instructions": [
-        {
-          "instruc": ""
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Final testing",
-      "author": "Kings",
-      "country": "Anguilla",
-      "description": "testing",
-      "flag": "",
-      "ingredients": [
-        {
-          "item": "",
-          "quantity": ""
-        }
-      ],
-      "image": "https://plus.unsplash.com/premium_photo-1663011120122-54384df169bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aW5zdHJ1Y3Rpb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-      "instructions": "2",
-      "item": "ingredients ",
-      "quantity": "3"
-    },
-    {
-      "id": 14,
-      "name": "Working inputs",
-      "author": "Alexander",
-      "country": "Nigeria",
-      "description": "egrtrtrfgffff",
-      "flag": "",
-      "image": "https://images.unsplash.com/photo-1618588590706-bac3c25b3d41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW5zdHJ1Y3Rpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
-      "instructions": [
-        "put two cups of water in egusi",
-        "put three cups of peppper",
-        "put on spoon of salt"
-      ],
-      "ingredients": [
-        {
-          "item": "a",
-          "quantity": "1"
-        },
-        {
-          "item": "b",
-          "quantity": "2"
-        },
-        {
-          "item": "c",
-          "quantity": "3"
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "name": "",
-      "author": "",
-      "country": "",
-      "description": "",
-      "flag": "",
-      "image": "",
-      "instructions": [],
-      "ingredients": [
-        {
-          "item": "22",
-          "quantity": "22"
-        },
-        "",
-        ""
-      ]
-    },
-    {
-      "id": 16,
-      "name": "",
-      "author": "",
-      "country": "",
-      "description": "",
-      "flag": "",
-      "image": "",
-      "instructions": [
-        "hjhj",
-        "jj"
-      ],
-      "ingredients": [
-        {
-          "item": "wr",
-          "quantity": "te"
-        },
-        {
-          "item": "rrg",
-          "quantity": "nj"
-        },
-        {
-          "item": "jjj",
-          "quantity": "jjj"
-        },
-        {
-          "item": "h",
-          "quantity": "hj"
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "name": "fffff",
-      "author": "",
-      "country": "",
-      "description": "",
-      "flag": "",
-      "image": "",
-      "ingredients": [
-        {
-          "item": "778",
-          "quantity": "dsf"
-        },
-        {
-          "item": "s",
-          "quantity": "sss"
-        },
-        {
-          "item": "ffff",
-          "quantity": "ffffff"
-        }
-      ],
-      "instructions": [
-        "fff",
-        "fff",
-        "ffff"
-      ]
-    },
-    {
-      "id": 18,
-      "name": "",
-      "author": "",
-      "country": "",
-      "description": "",
-      "flag": "",
-      "image": "",
-      "instructions": [
-        "1",
-        "2",
-        ""
-      ],
-      "ingredients": [
-        {
-          "item": "2",
-          "quantity": "2"
-        },
-        {
-          "item": "3",
-          "quantity": "3"
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "name": "",
-      "author": "",
-      "country": "",
-      "description": "",
-      "flag": "",
-      "image": "",
-      "instructions": [
-        "1",
-        "2",
-        ""
-      ],
-      "ingredients": []
-    },
-    {
-      "id": 20,
-      "name": "",
-      "author": "",
-      "country": "",
-      "description": "",
-      "flag": "",
-      "image": "",
-      "instructions": [
-        "a",
-        "b",
-        ""
-      ],
-      "ingredients": []
-    },
-    {
-      "id": 21,
-      "name": "",
-      "author": "",
-      "country": "",
-      "description": "",
-      "flag": "",
-      "image": "",
-      "instructions": [
-        "1",
-        ""
-      ]
-    },
-    {
-      "id": 22,
-      "name": "",
-      "author": "",
-      "country": "",
-      "description": "",
-      "flag": "",
-      "image": "",
-      "instructions": [
-        "1",
-        "2",
-        "3",
-        ""
-      ]
-    },
-    {
-      "id": 23,
-      "name": "",
-      "author": "",
-      "country": "",
-      "description": "",
-      "flag": "",
-      "image": "",
-      "instructions": [
-        "1",
-        "2",
-        [
-          ""
-        ]
-      ],
-      "ingredients": [
-        {
-          "item": "1",
-          "quantity": "1"
-        },
-        {
-          "item": "2",
-          "quantity": "2"
-        },
-        {
-          "item": "3",
-          "quantity": "3"
-        }
-      ]
-    },
-    {
-      "id": 24,
-      "name": "Egusi",
-      "author": "Alexander",
-      "country": "Nigeria",
-      "description": "Soup for swallow",
       "flag": "",
       "image": "https://images.unsplash.com/photo-1618588590706-bac3c25b3d41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW5zdHJ1Y3Rpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
       "instructions": [
@@ -306,19 +29,32 @@
       ]
     },
     {
-      "id": 25,
-      "name": "",
-      "author": "",
-      "country": "",
+      "id": 2,
+      "name": "Mashed Popatoes",
+      "author": "Anna",
+      "country": "Finland",
       "description": "",
       "flag": "",
-      "image": "",
+      "image": "https://images.unsplash.com/photo-1585508659081-04a1788941c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
       "instructions": [
-        "1",
-        "2",
-        ""
+        "Peel Potatoes",
+        "Boil Potatoes",
+        "Mash Potatoe"
       ],
-      "ingredients": []
+      "ingredients": [
+        {
+          "item": "Potatoes",
+          "quantity": "2 kg"
+        },
+        {
+          "item": "Water",
+          "quantity": "1 ltr"
+        },
+        {
+          "item": "Salt",
+          "quantity": "2 spoons"
+        }
+      ]
     }
   ]
 }

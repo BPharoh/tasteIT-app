@@ -4,6 +4,7 @@ import React, {useState, useEffect} from 'react';
 const RecipesPlus = () => {
 
 const [ countryList, setCountryList ] = useState([]);
+const [ data, setData ] = useState([]);
 const [ instruction, setInstruction ] = useState(['']);
 const [ingredient, setIngredient] = useState([{item:'', quantity:''}]);
 const [ uploadRecipe, setUploadRecipe ] = useState({
@@ -22,6 +23,7 @@ useEffect(() => {
     // setIsLoading(true)
     axios.get('https://restcountries.com/v3.1/all/')
     .then((res) => {
+    setData(res.data)
     let countries = [];
     res.data.map((item) => { 
     countries.push(item.name.common);
@@ -37,6 +39,19 @@ useEffect(() => {
 const inputHandler = (e) => {
       setUploadRecipe({...uploadRecipe,  [e.target.name]:e.target.value})
     };
+
+const flagHandler = (e) => {
+    data.map((item, index) => { 
+        let flagimg = e.target.value;
+        if (flagimg === item.name.common) { 
+    setUploadRecipe({...uploadRecipe,  flagurl: data[index].flags?.svg, country: data[index].name.common})
+}  
+return (e.target.value)
+ })}
+        
+
+
+
 
     //Ingredient //
 const ingredientsHandler = (e, index) => {
@@ -109,10 +124,10 @@ const submitHandler = (e) => {
                 </div>
                 <div className="form-group">
                 <label htmlFor="countries">Recipe Source</label>
-                <select name="country" onChange={inputHandler}>
+                <select name="country" onChange={flagHandler}>
                 <option value="selected">Select a country</option>
-                {countryList.map((index) => {
-            return ( <option value={index} key={index}>{index}</option>);
+                {countryList.map((item, index) => {
+            return ( <option value={item} key={index}>{item} </option>);
             })}</select>
             </div>
                 <div className="form-group">

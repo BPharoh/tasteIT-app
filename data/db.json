@@ -279,12 +279,12 @@
     },
     {
       "id": 24,
-      "name": "",
-      "author": "",
-      "country": "",
-      "description": "",
+      "name": "Egusi",
+      "author": "Alexander",
+      "country": "Nigeria",
+      "description": "Soup for swallow",
       "flag": "",
-      "image": "",
+      "image": "https://images.unsplash.com/photo-1618588590706-bac3c25b3d41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW5zdHJ1Y3Rpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
       "instructions": [
         "1",
         "2",

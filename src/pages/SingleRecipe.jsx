@@ -22,16 +22,50 @@ const SingleRecipe = () => {
         return <p> Loading......</p>
     }
 
+    // {data.ingredients?.map((ingredient) => {
+    //     return (
+    //       <tr key={ingredient.ingredient}>
+    //         <td>
+    //         {ingredient.quantity}  -  {ingredient.ingredient}
+    //         </td>
+    //       </tr> );
+    // }
+    //   )}
+
+    // <h4 className={classes.heading}>Ingradients:</h4>
+    // {recipeDetails.ingredients &&
+    //   recipeDetails.ingredients.map((ingred, index) => {
+    //     return (
+    //       <div className={classes.ingredient} key={index}>
+    //         {ingred.quantity} - {ingred.ingredient}
+    //       </div>
+    //     );
+    //   })}
+
         return ( 
             <div>
-            <h2>{data.name}</h2>
-             <h3>{data.author}</h3>
-             <h3>{data.country}</h3>
-             <img src={data.flag} alt={data.name}/>
-             <p>{data.description}</p>
+            <h2>Title: {data.name}</h2>
+             <h3>Author: {data.author}</h3>
+             <h3>Source: {data.country}</h3>
+             <img src={data.flag} alt={data.country}/>
+             <p> Description: {data.description}</p>
             <img src={data.image} alt={data.name}/>
-            <p>{data.ingredients}</p>
-            <p>{data.instructions}</p>
+            <h4>Ingredients: </h4>
+            {data.ingredients && data.ingredients.map((recipe, index) => {
+              return (
+                <div key={index}>
+                {index + 1}:  {recipe.quantity} of {recipe.item}
+                </div>
+              );
+            })}
+            <h4>Intructions: </h4>
+            {data.instructions && data.instructions.map((recipe, index) => {
+              return (
+                <div key={index}>
+                 Step {index + 1}: {recipe}
+                </div>
+              );
+            })}
             <button onClick={()=> navigate(-1)}>Go back</button>
         </div>
         );       

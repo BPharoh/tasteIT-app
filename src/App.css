@@ -1,3 +1,14 @@
 .instructions {
     white-space: pre-wrap;
 }
+
+
+.ingredients-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.instructions-group {
+    display: flex;
+    flex-direction: row;
+}

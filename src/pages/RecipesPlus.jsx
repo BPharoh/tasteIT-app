@@ -4,44 +4,62 @@ import React, {useState, useEffect} from 'react';
 const RecipesPlus = () => {
 
 const [ countryList, setCountryList ] = useState([]);
-// const [ instructions, setInstructions ] = useState([]);
-const [ingred, setIngred] = useState([{id: 1, item:'', quantity:''}])
-// const [isLoading, setIsLoading] = useState(false);
+const [ instruction, setInstruction ] = useState(['']);
+const [ingredient, setIngredient] = useState([{item:'', quantity:''}]);
 const [ uploadRecipe, setUploadRecipe ] = useState({
         id: '',
         name: '',
         author: '',
         country: '',
         description: '',
-        link: '',
-        ingredients: [],
-        instructions: []
+        flag: '',
+        image: '',
+        instructions: [],
+        ingredients: []
         });
-// const [ showpopup, setShowpopup ] = useState(false);
       
       
 const inputHandler = (e) => {
       setUploadRecipe({...uploadRecipe,  [e.target.name]:e.target.value})
     };
 
-const ingredientHandler = (e, index) => {
+    //Ingredient //
+const ingredientsHandler = (e, index) => {
     const {name, value} = e.target;
-    const addMore = [...ingred];
-    addMore[index][name] = value;
-    setIngred(addMore);
-    setUploadRecipe({ ...uploadRecipe, ingredients: ingred });
-      };
+    const ingredientList = [...ingredient]
+    ingredientList[index][name] = value;
+    setIngredient(ingredientList);
+    setUploadRecipe({ ...uploadRecipe, ingredients: ingredient });
+    };
 
-// const instructionsHandler =(e)=>{
-//         const name = e.target.name;
-//         let value = e.target.value;
-//         value = value.split('\n').map(str => <span>{str}<br/></span>);
-//         setUploadRecipe({ ...uploadRecipe, [name]: value });
-//         }
+const instructionsHandler =(e, index)=>{
+    const {value} = e.target;
+    const instructionList = [...instruction]
+    instructionList[index] = value;
+    setInstruction(instructionList);
+    setUploadRecipe({ ...uploadRecipe, instructions: instruction });
+        }
 
-const addMoreInputsHandler = (e) => {
-        e.preventDefault();
-        setIngred([...ingred,{id: ingred.length + 1,  item: '', quantity: '' }]);
+const addMoreInputsHandler = () => {
+    let addMore = {item: '', quantity: '' };
+        setIngredient([...ingredient, addMore]);
+    };
+
+const removeMoreInputsHandler = (index) => {
+    const ingredientList = [...ingredient]
+    ingredientList.splice(index, 1)
+        setIngredient(ingredientList);
+    };
+
+const addMoreInstructionsHandler = () => {
+    let allInstructions = '';
+        setInstruction([...instruction, allInstructions]);
+    };
+
+const removeMoreInstructionsHandler = (index) => {
+    const instructionList = [...instruction]
+    instructionList.splice(index, 1)
+    setInstruction(instructionList);
     };
 
 const postHandler = (e) => {
@@ -71,17 +89,10 @@ console.log('RestAPI:', countries);
 });
 }, []);
 
-// if(isLoading){
-//     return <p>Loading...</p>
-//   }
-
-
-
-
     return (
         <div>
             <h1>Add new recipe</h1>
-            <form action="" method="post" onChange={inputHandler} onSubmit={submitHandler} {...uploadRecipe}>
+            <form action="" onSubmit={submitHandler}>
                 <div className="form-group">
                     <label htmlFor="name">Name:
                     <input 
@@ -117,35 +128,50 @@ console.log('RestAPI:', countries);
                     <label htmlFor="link">Image</label>
                     <input 
                     type="text" 
-                    name="link" 
+                    name="image" 
                     onChange={inputHandler}
                     />
                 </div>
                 <p>Ingredients</p>
-                {ingred.map((_, index) => {
-                    return (
-                    <div className="form-group" key={index}>
-                    <div className="add-more">
+                {ingredient.map((singleIngredient, index) => {
+                    return ( 
+                    <div key={index}>
+                    <div className="add-more" >
+                    <div>
                     <label htmlFor="item">Item</label>
-                    <input type="text" name="item" id="item" onChange={(e) => ingredientHandler(e, index)}/>
+                    <input type="text" name="item" id="item" value={singleIngredient.item} onChange={(e) => ingredientsHandler(e, index)}/>
                     </div>
-                    <div className="add-more">
+                    <div>
                     <label htmlFor="quantity">Quantity</label>
-                    <input type="text" name="quantity" id="quantity" onChange={(e) => ingredientHandler(e, index)}/>
+                    <input type="text" name="quantity" id="quantity" value={singleIngredient.quantity} onChange={(e) => ingredientsHandler(e, index)}/>
                     </div>
-                    </div> 
-                    );
+                    {(ingredient.length - 1 === index ) && (ingredient.length < 40) && (<button type='button' onClick={addMoreInputsHandler}>add more</button>)}
+                    </div>
+                    <div className="remove more">
+                        {ingredient.length > 1 && ( <button type='button' onClick={() => {removeMoreInputsHandler(index)}}>remove more</button>)}
+                    </div>
+                    </div>
+                );
                 })}
-                <button type='button' onClick={addMoreInputsHandler}>add more</button>
-                
-  
-                <div className="form-group instructions">
-                    <label htmlFor="instructions">Instructions</label>
-                    <textarea 
+                  <label htmlFor="instructions">Instructions</label>
+                {instruction.map((allInstructions, index) => {
+                    return ( 
+                <div className="form-group instructions" key={index}>
+                    <div className="first-part">
+                    <input 
+                    type="text"
                     name="instructions" 
+                    value={allInstructions.instructions}
+                    onChange={(e) => instructionsHandler(e, index)}
                     />
-
+                    {(instruction.length - 1 === index ) && (instruction.length < 40) && (<button type='button' onClick={addMoreInstructionsHandler}>+ Instruction Steps</button>)}
+                    </div>
+                    <div className="second-part">
+                {instruction.length > 1 && ( <button type='button' onClick={() => {removeMoreInstructionsHandler(index)}}>remove steps</button>)}
                 </div>
+                </div>
+                 );
+                })}
                 <button type="submit" >Post recipe</button>
             </form>
         </div>

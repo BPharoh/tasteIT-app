@@ -25,12 +25,13 @@ const SingleRecipe = () => {
         return ( 
             <div>
             <h2>{data.name}</h2>
-             <p>{data.author}</p>
-             <p>{data.country}</p>
+             <h3>{data.author}</h3>
+             <h3>{data.country}</h3>
+             <img src={data.flag} alt={data.name}/>
              <p>{data.description}</p>
             <img src={data.image} alt={data.name}/>
             <p>{data.ingredients}</p>
-            <p>{data.instruction}</p>
+            <p>{data.instructions}</p>
             <button onClick={()=> navigate(-1)}>Go back</button>
         </div>
         );       

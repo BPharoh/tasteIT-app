@@ -3,6 +3,13 @@ import React from 'react';
 const AddRecipes = () => {
     return (
         <div>
+            {/* <h2> Output </h2>
+                    {
+                    ingred.map((singleIngredient, index) => ( 
+                        <ul key={index}>
+                            {singleIngredient.item && <li>{singleIngredient.item}</li>}
+                        </ul>
+                    ))}  */}
                 <form action="" method="post">
                 <div className="form-group">
                     <label htmlFor="recipe-name">Name</label>

@@ -31,10 +31,9 @@ const searchedRecipes = recipes.filter((recipe) => {
                 <RecipeCard
                key={recipe.id} 
                name={recipe.name} 
-               author={recipe.author} 
+               flagurl={recipe.flagurl} 
                id={recipe.id}
                country={recipe.country} 
-               ingredients={recipe.ingredients} 
                image={recipe.image} alt={recipe.name}
                />
        

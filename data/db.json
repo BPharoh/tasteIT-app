@@ -2,286 +2,988 @@
   "recipes": [
     {
       "id": 1,
-      "name": "Egusi",
+      "name": "Jollof Rice",
       "author": "Alexander",
       "country": "Nigeria",
-      "description": "Soup for swallow",
-      "flag": "",
-      "image": "https://images.unsplash.com/photo-1618588590706-bac3c25b3d41?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aW5zdHJ1Y3Rpb258ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+      "description": "Boil rice in water and mix with different spices then add some oils. ",
+      "flagurl": "https://flagcdn.com/ng.svg",
+      "image": "https://images.unsplash.com/photo-1599354607448-8ad6e92b027a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1767&q=80",
       "instructions": [
-        "1",
-        "2",
-        ""
+        "Boil rice in water",
+        "Add palm oil",
+        "Add spice"
       ],
       "ingredients": [
         {
-          "item": "1",
-          "quantity": "1"
+          "item": "Rice",
+          "quantity": 2,
+          "unit": "kg"
         },
         {
-          "item": "2",
-          "quantity": "2"
+          "item": "Water",
+          "quantity": 1,
+          "unit": "litre"
         },
         {
-          "item": "3",
-          "quantity": "4"
+          "item": "Oil",
+          "quantity": 5,
+          "unit": "spoons"
         }
       ]
     },
     {
       "id": 2,
-      "name": "Mashed Popatoes",
-      "author": "Anna",
-      "country": "Finland",
-      "description": "",
-      "flag": "",
-      "image": "https://images.unsplash.com/photo-1585508659081-04a1788941c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80",
-      "instructions": [
-        "Peel Potatoes",
-        "Boil Potatoes",
-        "Mash Potatoe"
-      ],
+      "name": "Chicken Parmesan",
+      "author": "Maria Valentina",
+      "country": "Italy",
+      "description": "A classic Italian dish of breaded chicken topped with tomato sauce and melted mozzarella cheese.",
+      "flagurl": "https://flagcdn.com/it.svg",
+      "image": "https://assets.bonappetit.com/photos/5ea8f0df16738800085ad5d2/1:1/w_2560%2Cc_limit/Chicken-Parmesean-Recipe-Lede.jpg",
       "ingredients": [
         {
-          "item": "Potatoes",
-          "quantity": "2 kg"
+          "item": "chicken breasts",
+          "quantity": 2,
+          "unit": "pounds"
         },
         {
-          "item": "Water",
-          "quantity": "1 ltr"
+          "item": "flour",
+          "quantity": 0.5,
+          "unit": "cup"
         },
         {
-          "item": "Salt",
-          "quantity": "2 spoons"
+          "item": "eggs",
+          "quantity": 2,
+          "unit": "whole"
+        },
+        {
+          "item": "bread crumbs",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "tomato sauce",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "mozzarella cheese",
+          "quantity": 1,
+          "unit": "cup"
         }
+      ],
+      "instructions": [
+        "Preheat the oven to 400 degrees F.",
+        "Cut the chicken breasts in half lengthwise to create thin cutlets.",
+        "In a shallow dish, combine the flour and some salt and pepper.",
+        "In a separate shallow dish, beat the eggs.",
+        "In a third shallow dish, mix the bread crumbs with some grated Parmesan cheese.",
+        "Dredge each chicken cutlet in the flour mixture, then dip it in the egg mixture, and then coat it with the bread crumb mixture, pressing gently to help the bread crumbs adhere.",
+        "Heat some oil in a large oven-safe skillet over medium-high heat. Add the chicken cutlets and cook until they are golden brown on both sides, about 2 minutes per side.",
+        "Pour the tomato sauce over the chicken and sprinkle with the mozzarella cheese. Transfer the skillet to the oven and bake until the cheese is melted and bubbly, about 10 minutes.",
+        "Serve the chicken Parmesan with a side of pasta or a salad."
       ]
     },
     {
       "id": 3,
-      "name": "ttt",
-      "author": "tttt",
-      "country": "Albania",
-      "description": "ttt",
-      "flagurl": "",
-      "image": "tttt",
-      "instructions": [
-        "ttt"
-      ],
+      "name": "Pad Thai",
+      "author": "Malee Saelim",
+      "country": "Thailand",
+      "description": "A popular Thai street food dish made with stir-fried rice noodles, eggs, and a variety of vegetables and seasonings.",
+      "flagurl": "https://flagcdn.com/th.svg",
+      "image": "https://www.feastingathome.com/wp-content/uploads/2016/04/pad-thai-2.jpg",
       "ingredients": [
         {
-          "item": "ttt",
-          "quantity": "tttt"
+          "item": "rice noodles",
+          "quantity": 8,
+          "unit": "ounces"
+        },
+        {
+          "item": "eggs",
+          "quantity": 2,
+          "unit": "whole"
+        },
+        {
+          "item": "bean sprouts",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "green onions",
+          "quantity": 0.5,
+          "unit": "cup"
+        },
+        {
+          "item": "ground peanuts",
+          "quantity": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "lime",
+          "quantity": 4,
+          "unit": "wedges"
+        },
+        {
+          "item": "fish sauce",
+          "quantity": 2,
+          "unit": "tablespoon"
+        },
+        {
+          "item": "brown sugar",
+          "quantity": 1,
+          "unit": "tablespoon"
+        },
+        {
+          "item": "red pepper flakes",
+          "quantity": 1,
+          "unit": "teaspoon"
         }
+      ],
+      "instructions": [
+        "Soak the rice noodles in warm water for 30 minutes, then drain and set aside.",
+        "In a large wok or skillet, heat some oil over medium-high heat. Add the eggs and scramble until cooked, then transfer to a plate and set aside.",
+        "Add more oil to the wok or skillet and heat until hot. Add the drained rice noodles, bean sprouts, green onions, ground peanuts, and lime wedges. Stir-fry until the noodles are softened and heated through, about 5 minutes.",
+        "Add the scrambled eggs, fish sauce, brown sugar, and red pepper flakes. Stir-fry until the ingredients are well combined and the noodles are coated with the sauce, about 2 minutes.",
+        "Serve the pad Thai hot, garnished with additional ground peanuts and lime wedges, if desired."
       ]
     },
     {
       "id": 4,
-      "name": "dsds",
-      "author": "ddds",
-      "country": "American Samoa",
-      "description": "ds",
-      "flagurl": "",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 5,
-      "name": "",
-      "author": "err",
-      "country": "Albania",
-      "description": "",
-      "flagurl": "",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 6,
-      "name": "eee",
-      "author": "",
-      "country": "Grenada",
-      "description": "",
-      "flagurl": "https://flagcdn.com/gd.svg",
-      "image": "",
-      "instructions": [
-        "eee"
-      ],
-      "ingredients": []
-    },
-    {
-      "id": 7,
-      "name": "test",
-      "author": "",
-      "country": "",
-      "description": "",
-      "flagurl": "",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 8,
-      "name": "eeee",
-      "author": "",
-      "country": "",
-      "description": "",
-      "flagurl": "",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 9,
-      "name": "weeee",
-      "author": "",
-      "country": "",
-      "description": "",
-      "flagurl": "",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 10,
-      "name": "sss",
-      "author": "",
-      "country": "",
-      "description": "",
-      "flagurl": "",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 11,
-      "name": "www",
-      "author": "",
-      "country": "Grenada",
-      "description": "",
-      "flagurl": "https://flagcdn.com/gd.svg",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 12,
-      "name": "rrrrr",
-      "author": "",
-      "country": "Grenada",
-      "description": "",
-      "flagurl": "https://flagcdn.com/gd.svg",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 13,
-      "name": "eee",
-      "author": "",
-      "country": "Mali",
-      "description": "eeee",
-      "flagurl": "https://flagcdn.com/ml.svg",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 14,
-      "name": "rrwrf",
-      "author": "fffd",
-      "country": "",
-      "description": "",
-      "flagurl": "",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 15,
-      "name": "ssas",
-      "author": "",
-      "country": "Malaysia",
-      "description": "",
-      "flagurl": "https://flagcdn.com/my.svg",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 16,
-      "name": "qee",
-      "author": "ewee",
-      "country": "Afghanistan",
-      "description": "",
-      "flagurl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 17,
-      "name": "rrr",
-      "author": "",
-      "country": "Malaysia",
-      "description": "",
-      "flagurl": "https://flagcdn.com/my.svg",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 18,
-      "name": "eewee",
-      "author": "weweeeew",
-      "country": "Belarus",
-      "description": "ewee",
-      "flagurl": "https://flagcdn.com/by.svg",
-      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAD1BMVEXOFyAAfDBoZiwAfjDXAh9y2NjOAAAAM0lEQVRoge3MMQ0AIBAEsIPHv2YUMF7C0ApoAgAAAADA905RdlGmKKtILpfL5XK5XC5/uQRhDakn0bA1AAAAAElFTkSuQmCC",
-      "instructions": [
-        "weeeew"
-      ],
+      "name": "Chicken Alfredo",
+      "author": "Flavio Giovanni",
+      "country": "Italy",
+      "description": "A rich and creamy pasta dish with a homemade Alfredo sauce and tender chicken.",
+      "flagurl": "https://flagcdn.com/it.svg",
+      "image": "https://www.budgetbytes.com/wp-content/uploads/2022/07/Chicken-Alfredo-bowl.jpg",
       "ingredients": [
         {
-          "item": "eeweeew",
-          "quantity": "eewewe"
+          "item": "chicken breast",
+          "quantity": 2,
+          "unit": "pounds"
+        },
+        {
+          "item": "fettuccine pasta",
+          "quantity": 1,
+          "unit": "pound"
+        },
+        {
+          "item": "butter",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "heavy cream",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "garlic",
+          "quantity": 4,
+          "unit": "cloves"
+        },
+        {
+          "item": "parmesan cheese",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "salt",
+          "quantity": 0.5,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "pepper",
+          "quantity": 0.25,
+          "unit": "teaspoon"
         }
+      ],
+      "instructions": [
+        "Cook pasta according to package instructions.",
+        "Meanwhile, heat butter in a large saucepan over medium heat. Add garlic and cook until fragrant, about 1 minute.",
+        "Add heavy cream and parmesan cheese to the saucepan and stir until the cheese is melted and the sauce is smooth.",
+        "Season the sauce with salt and pepper to taste.",
+        "Add cooked and drained pasta to the saucepan and toss to coat with the Alfredo sauce.",
+        "Serve immediately, garnished with additional parmesan cheese if desired."
       ]
     },
     {
-      "id": 19,
-      "name": "fff",
-      "author": "ffffff",
-      "country": "Spain",
-      "description": "",
-      "flagurl": "https://flagcdn.com/es.svg",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 20,
-      "name": "ttt",
-      "author": "",
-      "country": "French Guiana",
-      "description": "",
-      "flagurl": "https://flagcdn.com/gf.svg",
-      "image": "",
-      "instructions": [],
-      "ingredients": []
-    },
-    {
-      "id": 21,
-      "name": "ccc",
-      "author": "cccc",
-      "country": "Bahrain",
-      "description": "",
-      "flagurl": "https://flagcdn.com/bh.svg",
-      "image": "",
-      "instructions": [
-        "c"
+      "id": 5,
+      "name": "Beef Stroganoff",
+      "author": "Alexsei Sidorov",
+      "country": "Russia",
+      "description": "A hearty and comforting dish of tender beef in a rich and creamy sauce, served over egg noodles.",
+      "flagurl": "https://flagcdn.com/ru.svg",
+      "image": "https://www.gimmesomeoven.com/wp-content/uploads/2020/10/Beef-Stroganoff-Recipe-9.jpg",
+      "ingredients": [
+        {
+          "item": "beef tenderloin",
+          "quantity": 1.5,
+          "unit": "pounds"
+        },
+        {
+          "item": "egg noodles",
+          "quantity": 1,
+          "unit": "pound"
+        },
+        {
+          "item": "butter",
+          "quantity": 0.5,
+          "unit": "cup"
+        },
+        {
+          "item": "onion",
+          "quantity": 1,
+          "unit": "large"
+        },
+        {
+          "item": "mushrooms",
+          "quantity": 8,
+          "unit": "ounces"
+        },
+        {
+          "item": "beef broth",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "sour cream",
+          "quantity": 0.5,
+          "unit": "cup"
+        },
+        {
+          "item": "salt",
+          "quantity": 0.5,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "pepper",
+          "quantity": 0.25,
+          "unit": "teaspoon"
+        }
       ],
-      "ingredients": []
+      "instructions": [
+        "Cook noodles according to package instructions.",
+        "Meanwhile, heat butter in a large saucepan over medium heat. Add onion and mushrooms and cook until softened, about 5 minutes.",
+        "Cut beef into thin strips and add to the saucepan. Cook until the beef is browned on all sides, about 5-7 minutes.",
+        "Pour beef broth into the saucepan and bring to a simmer. Reduce heat to low and stir in sour cream.",
+        "Season the sauce with salt and pepper to taste.",
+        "Serve the beef stroganoff over cooked egg noodles, garnished with additional sour cream and chopped fresh parsley if desired."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Vegetable Stir-Fry",
+      "author": "Mao Dong",
+      "country": "China",
+      "description": "A healthy and delicious dish of stir-fried vegetables in a savory sauce, served over rice.",
+      "flagurl": "https://flagcdn.com/cn.svg",
+      "image": "https://peasandcrayons.com/wp-content/uploads/2020/12/vegetable-stir-fry-noodles-recipe-.jpg",
+      "ingredients": [
+        {
+          "item": "rice",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "broccoli",
+          "quantity": 1,
+          "unit": "head"
+        },
+        {
+          "item": "carrots",
+          "quantity": 2,
+          "unit": "large"
+        },
+        {
+          "item": "bell pepper",
+          "quantity": 1,
+          "unit": "large"
+        },
+        {
+          "item": "onion",
+          "quantity": 1,
+          "unit": "medium"
+        },
+        {
+          "item": "vegetable oil",
+          "quantity": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "item": "soy sauce",
+          "quantity": 3,
+          "unit": "tablespoons"
+        },
+        {
+          "item": "ginger",
+          "quantity": 1,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "garlic",
+          "quantity": 2,
+          "unit": "cloves"
+        },
+        {
+          "item": "salt",
+          "quantity": 0.25,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "pepper",
+          "quantity": 0.25,
+          "unit": "teaspoon"
+        }
+      ],
+      "instructions": [
+        "Cook rice according to package instructions.",
+        "Meanwhile, cut broccoli, carrots, bell pepper, and onion into bite-sized pieces.",
+        "Heat oil in a large wok or skillet over high heat. Add vegetables and stir-fry until they are tender but still crisp, about 5-7 minutes.",
+        "Stir in soy sauce, ginger, garlic, salt, and pepper, and cook for an additional minute.",
+        "Serve the vegetable stir-fry over cooked rice, garnished with chopped fresh cilantro if desired."
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Finnish Pancakes",
+      "author": "Matti Meikäläinen",
+      "country": "Finland",
+      "description": "These Finnish pancakes are thin and deliciously crispy. Perfect for enjoying with a variety of toppings, such as jam, sugar, or fresh berries.",
+      "flagurl": "https://flagcdn.com/fi.svg",
+      "image": "https://assets.bonappetit.com/photos/608acf9320c3cccdd978fac7/1:1/w_1687,h_1687,c_limit/Basically-FinnishPancakes.jpg",
+      "ingredients": [
+        {
+          "item": "all-purpose flour",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "milk",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "egg",
+          "quantity": 1,
+          "unit": "whole"
+        },
+        {
+          "item": "sugar",
+          "quantity": 1,
+          "unit": "tablespoon"
+        },
+        {
+          "item": "baking powder",
+          "quantity": 1,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "salt",
+          "quantity": 0.25,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "butter",
+          "quantity": 2,
+          "unit": "tablespoons"
+        }
+      ],
+      "instructions": [
+        "In a medium bowl, whisk together the flour, milk, egg, sugar, baking powder, and salt until smooth.",
+        "Stir in the melted butter.",
+        "Heat a large non-stick skillet over medium heat. Lightly brush with oil or butter.",
+        "Pour 1/4 cup of batter into the skillet and swirl to spread evenly. Cook until the edges are lightly browned and bubbles form on the surface.",
+        "Flip and cook for an additional minute, or until the other side is lightly browned.",
+        "Repeat with the remaining batter, adding more oil or butter as needed.",
+        "Serve the pancakes hot, topped with your favorite toppings."
+      ]
+    },
+    {
+      "id": 8,
+      "name": "German Potato Salad",
+      "author": "Peter Niedersachsen",
+      "country": "Germany",
+      "description": "This German potato salad is a tangy and delicious side dish. It's perfect for serving at a summer BBQ or alongside a hearty meal.",
+      "flagurl": "https://flagcdn.com/de.svg",
+      "image": "https://www.cookingclassy.com/wp-content/uploads/2020/06/german-potato-salad-2.jpg",
+      "ingredients": [
+        {
+          "item": "potatoes",
+          "quantity": 6,
+          "unit": "medium"
+        },
+        {
+          "item": "bacon",
+          "quantity": 6,
+          "unit": "slices"
+        },
+        {
+          "item": "onion",
+          "quantity": 1,
+          "unit": "large"
+        },
+        {
+          "item": "white vinegar",
+          "quantity": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "water",
+          "quantity": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "sugar",
+          "quantity": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "salt",
+          "quantity": 0.5,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "pepper",
+          "quantity": 0.5,
+          "unit": "teaspoon"
+        }
+      ],
+      "instructions": [
+        "Place the potatoes in a large saucepan and cover with water. Bring to a boil over high heat and cook for 15-20 minutes, or until the potatoes are tender.",
+        "Meanwhile, cook the bacon in a large skillet over medium heat until crisp. Remove the bacon from the skillet and set aside. Reserve the bacon grease in the skillet.",
+        "Peel and thinly slice the onion. Add the onion to the skillet with the reserved bacon grease and cook over medium heat until softened.",
+        "In a small saucepan, whisk together the vinegar, water, sugar, salt, and pepper. Bring to a boil over medium-high heat and cook for 1 minute, or until the sugar has dissolved.",
+        "When the potatoes are tender, drain and cut into 1/4-inch slices. Place the potatoes in a large bowl and add the cooked onions and vinegar mixture. Stir gently to combine.",
+        "Crumble the cooked bacon and sprinkle over the top of the potato salad. Serve immediately, or refrigerate until ready to serve."
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Swiss Cheese Fondue",
+      "author": "Karl Franz",
+      "country": "Switzerland",
+      "description": "A traditional Swiss dish made with melted cheese and white wine, served with bread for dipping.",
+      "flagurl": "https://flagcdn.com/ch.svg",
+      "image": "https://www.earthfoodandfire.com/wp-content/uploads/2016/11/authentic-swiss-cheese-fondue.jpg",
+      "ingredients": [
+        {
+          "item": "Gruyere cheese",
+          "quantity": 1.5,
+          "unit": "pound"
+        },
+        {
+          "item": "Emmental cheese",
+          "quantity": 1.5,
+          "unit": "pounds"
+        },
+        {
+          "item": "White wine",
+          "quantity": 2,
+          "unit": "cups"
+        },
+        {
+          "item": "Garlic",
+          "quantity": 3,
+          "unit": "cloves"
+        },
+        {
+          "item": "Kirsch",
+          "quantity": 1,
+          "unit": "tablespoon"
+        }
+      ],
+      "instructions": [
+        "Rub the inside of a large fondue pot with the garlic cloves.",
+        "Pour the white wine into the pot and heat over medium heat until hot, but not boiling.",
+        "Grate the Gruyere and Emmental cheeses and add to the pot, a handful at a time, stirring until melted and well combined.",
+        "Stir in the Kirsch and season with salt and pepper to taste.",
+        "Transfer the pot to the stove or a portable burner to keep warm while serving.",
+        "Serve with cubes of bread for dipping."
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Classic American Cheeseburger",
+      "author": "John Doe",
+      "country": "United States",
+      "description": "A delicious burger made with ground beef, cheese, lettuce, tomato, and onion, served on a toasted bun.",
+      "flagurl": "https://flagcdn.com/us.svg",
+      "image": "https://www.sbs.com.au/food/sites/sbs.com.au.food/files/f6e4af93-11ef-4279-8ae7-64acd51f6a36.jpeg",
+      "ingredients": [
+        {
+          "item": "Ground beef",
+          "quantity": 1.5,
+          "unit": "pounds"
+        },
+        {
+          "item": "American cheese",
+          "quantity": 4,
+          "unit": "slices"
+        },
+        {
+          "item": "Lettuce",
+          "quantity": 1,
+          "unit": "head"
+        },
+        {
+          "item": "Tomato",
+          "quantity": 1,
+          "unit": "medium"
+        },
+        {
+          "item": "Onion",
+          "quantity": 0.5,
+          "unit": "large"
+        },
+        {
+          "item": "Hamburger buns",
+          "quantity": 4,
+          "unit": "large"
+        }
+      ],
+      "instructions": [
+        "Preheat the grill to medium-high heat.",
+        "Divide the ground beef into four equal portions and shape into patties.",
+        "Grill the burgers for about 5 minutes per side, or until cooked to your desired level of doneness.",
+        "During the last minute of grilling, top each burger with a slice of cheese to melt.",
+        "While the burgers are grilling, slice the tomato, onion, and lettuce.",
+        "Toast the hamburger buns on the grill until lightly golden.",
+        "Assemble the burgers by placing a burger patty on the bottom bun, followed by lettuce, tomato, onion, and the top bun."
+      ]
+    },
+    {
+      "id": 11,
+      "name": "American Pancakes",
+      "author": "John Doe",
+      "country": "United States",
+      "description": "Fluffy and delicious pancakes, a classic American breakfast favorite.",
+      "flagurl": "https://flagcdn.com/us.svg",
+      "image": "https://glutenfreecuppatea.co.uk/wp-content/uploads/2021/02/gluten-free-american-pancakes-recipe.jpg",
+      "ingredients": [
+        {
+          "item": "all-purpose flour",
+          "quantity": 1.5,
+          "unit": "cups"
+        },
+        {
+          "item": "baking powder",
+          "quantity": 2,
+          "unit": "teaspoons"
+        },
+        {
+          "item": "sugar",
+          "quantity": 0.5,
+          "unit": "cups"
+        },
+        {
+          "item": "salt",
+          "quantity": 0.25,
+          "unit": "teaspoons"
+        },
+        {
+          "item": "milk",
+          "quantity": 1.5,
+          "unit": "cups"
+        },
+        {
+          "item": "vegetable oil",
+          "quantity": 3,
+          "unit": "tablespoons"
+        },
+        {
+          "item": "eggs",
+          "quantity": 2,
+          "unit": "whole"
+        }
+      ],
+      "instructions": [
+        "In a large bowl, whisk together the flour, baking powder, sugar, and salt.",
+        "In a separate bowl, whisk together the milk, vegetable oil, and eggs.",
+        "Pour the wet ingredients into the dry ingredients and whisk until well combined.",
+        "Heat a large skillet over medium heat and lightly grease with cooking spray or butter.",
+        "Pour 1/4 cup of batter onto the skillet for each pancake. Cook until bubbles form on the surface, about 2 minutes.",
+        "Flip the pancakes and cook until golden brown on the other side, about 2 minutes more.",
+        "Serve the pancakes hot, with your choice of toppings, such as butter and maple syrup."
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Peanut Butter and Jelly Sandwich",
+      "author": "Jane Doe",
+      "country": "United States",
+      "description": "This classic sandwich is a childhood favorite and makes a quick and easy lunch option.",
+      "flagurl": "https://flagcdn.com/us.svg",
+      "image": "https://toasterovenlove.com/wp-content/uploads/Toasted-Peanut-Butter-and-Jelly-2.jpg",
+      "ingredients": [
+        {
+          "item": "peanut butter",
+          "quantity": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "item": "jelly or jam",
+          "quantity": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "item": "bread",
+          "quantity": 2,
+          "unit": "slices"
+        }
+      ],
+      "instructions": [
+        "Spread peanut butter on one slice of bread.",
+        "Spread jelly on the other slice of bread.",
+        "Place the slices together to form a sandwich.",
+        "Cut the sandwich in half and serve."
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Paella",
+      "author": "Juan Perez",
+      "country": "Spain",
+      "description": "Paella is a traditional Spanish rice dish that is commonly made with a variety of ingredients, including seafood, chicken, and vegetables.",
+      "flagurl": "https://flagcdn.com/es.svg",
+      "image": "https://www.acouplecooks.com/wp-content/uploads/2020/07/Paella-Recipe-014.jpg",
+      "ingredients": [
+        {
+          "item": "olive oil",
+          "quantity": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "item": "onion, diced",
+          "quantity": 0.5,
+          "unit": "cup"
+        },
+        {
+          "item": "garlic, minced",
+          "quantity": 2,
+          "unit": "cloves"
+        },
+        {
+          "item": "chicken, cut into bite-sized pieces",
+          "quantity": 1,
+          "unit": "pound"
+        },
+        {
+          "item": "saffron threads",
+          "quantity": 0.25,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "paprika",
+          "quantity": 1,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "tomato, diced",
+          "quantity": 0.5,
+          "unit": "cup"
+        },
+        {
+          "item": "chicken broth",
+          "quantity": 2,
+          "unit": "cups"
+        },
+        {
+          "item": "calasparra or bomba rice",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "green beans, trimmed and cut into 1-inch pieces",
+          "quantity": 0.5,
+          "unit": "cup"
+        },
+        {
+          "item": "mussels, cleaned and debearded",
+          "quantity": 1,
+          "unit": "pound"
+        },
+        {
+          "item": "shrimp, peeled and deveined",
+          "quantity": 0.5,
+          "unit": "pound"
+        },
+        {
+          "item": "lemon wedges",
+          "quantity": 1,
+          "unit": "lemon"
+        }
+      ],
+      "instructions": [
+        "Heat the olive oil in a paella pan or large, shallow skillet over medium heat. Add the onion and garlic and cook until the onion is softened, about 5 minutes.",
+        "Add the chicken and cook until lightly browned, about 5 minutes. Stir in the saffron, paprika, and tomato. Add the chicken broth and rice and bring to a boil. Reduce the heat to low and simmer, covered, until the rice is almost cooked, about 20 minutes.",
+        "Stir in the green beans and mussels and cook until the mussels have opened and the rice is cooked, about 10 minutes. Stir in the shrimp and cook until they are pink and cooked through, about 5 minutes. Serve the paella with lemon wedges on the side."
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Köttbullar (Swedish Meatballs)",
+      "author": "Lena Svensson",
+      "country": "Sweden",
+      "description": "Köttbullar are a traditional Swedish dish typically served with gravy, mashed potatoes, and lingonberry jam. They make a delicious and comforting meal.",
+      "flagurl": "https://flagcdn.com/se.svg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/17-06-09-IKEA-K%C3%B6ttbullar-RalfR-IMG_20170609_182055_928a.jpg/1200px-17-06-09-IKEA-K%C3%B6ttbullar-RalfR-IMG_20170609_182055_928a.jpg",
+      "ingredients": [
+        {
+          "item": "ground beef",
+          "quantity": 0.5,
+          "unit": "pound"
+        },
+        {
+          "item": "ground pork",
+          "quantity": 0.5,
+          "unit": "pound"
+        },
+        {
+          "item": "onion, finely minced",
+          "quantity": 1,
+          "unit": "small"
+        },
+        {
+          "item": "breadcrumbs",
+          "quantity": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "milk",
+          "quantity": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "all-purpose flour",
+          "quantity": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "item": "salt",
+          "quantity": 0.25,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "white pepper",
+          "quantity": 0.25,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "nutmeg",
+          "quantity": 0.125,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "butter",
+          "quantity": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "item": "beef stock",
+          "quantity": 1.5,
+          "unit": "cups"
+        },
+        {
+          "item": "heavy cream",
+          "quantity": 0.5,
+          "unit": "cup"
+        },
+        {
+          "item": "lingonberry jam",
+          "quantity": 0.25,
+          "unit": "cup"
+        }
+      ],
+      "instructions": [
+        "In a large mixing bowl, combine the ground beef and pork, onion, breadcrumbs, milk, flour, salt, white pepper, and nutmeg. Mix until well combined.",
+        "Form the mixture into small balls, about 1 inch in diameter. In a large skillet, melt the butter over medium heat. Add the meatballs and cook until browned on all sides and cooked through, about 10 minutes.",
+        "In a small saucepan, bring the beef stock to a simmer. Add the heavy cream and lingonberry jam and stir until well combined. Pour the sauce over the meatballs and serve immediately with mashed potatoes and additional lingonberry jam on the side."
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Bigos (Polish Hunter's Stew)",
+      "author": "Kasia Nowak",
+      "country": "Poland",
+      "description": "Bigos is a traditional Polish stew that is often referred to as the 'Hunter's Stew' because it is made with a variety of meats, including sausage and game. It is a hearty and flavorful dish that is perfect for cold weather.",
+      "flagurl": "https://flagcdn.com/pl.svg",
+      "image": "https://assets.bonappetit.com/photos/5bc65895c5a9942d0858718d/5:4/w_3515,h_2812,c_limit/bigos-1.jpg",
+      "ingredients": [
+        {
+          "item": "butter",
+          "quantity": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "item": "onion, chopped",
+          "quantity": 1,
+          "unit": "medium"
+        },
+        {
+          "item": "sausage, sliced",
+          "quantity": 0.5,
+          "unit": "pound"
+        },
+        {
+          "item": "pork shoulder, cut into bite-sized pieces",
+          "quantity": 0.5,
+          "unit": "pound"
+        },
+        {
+          "item": "smoked bacon, diced",
+          "quantity": 0.25,
+          "unit": "pound"
+        },
+        {
+          "item": "cabbage, shredded",
+          "quantity": 1,
+          "unit": "small"
+        },
+        {
+          "item": "tomato puree",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "red wine",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "beef broth",
+          "quantity": 1.5,
+          "unit": "cups"
+        },
+        {
+          "item": "bay leaves",
+          "quantity": 2,
+          "unit": "leaves"
+        },
+        {
+          "item": "juniper berries",
+          "quantity": 0.5,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "salt",
+          "quantity": 0.25,
+          "unit": "teaspoon"
+        },
+        {
+          "item": "pepper",
+          "quantity": 0.25,
+          "unit": "teaspoon"
+        }
+      ],
+      "instructions": [
+        "In a large pot or Dutch oven, melt the butter over medium heat. Add the onion and cook until softened, about 5 minutes. Add the sausage, pork, and bacon and cook until the meat is browned, about 10 minutes.",
+        "Add the cabbage, tomato puree, red wine, beef broth, bay leaves, juniper berries, salt, and pepper. Bring the mixture to a boil, then reduce the heat to low and simmer, covered, for about 2 hours, or until the meat is tender and the flavors have melded.",
+        "Serve the bigos hot with crusty bread or boiled potatoes on the side."
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Teriyaki Chicken",
+      "author": "Akasuki Akina",
+      "country": "Japan",
+      "description": "A delicious and easy-to-make Japanese dish made with chicken marinated in a sweet and savory teriyaki sauce.",
+      "flagurl": "https://flagcdn.com/jp.svg",
+      "image": "https://jasmineandtea.com/wp-content/uploads/2021/07/chicken-teriyaki-recipe.jpg",
+      "ingredients": [
+        {
+          "item": "chicken breast",
+          "quantity": 2,
+          "unit": "lbs"
+        },
+        {
+          "item": "soy sauce",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "mirin",
+          "quantity": 0.5,
+          "unit": "cup"
+        },
+        {
+          "item": "sugar",
+          "quantity": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "ginger",
+          "quantity": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "garlic",
+          "quantity": 2,
+          "unit": "cloves"
+        }
+      ],
+      "instructions": [
+        "In a bowl, whisk together the soy sauce, mirin, sugar, ginger, and garlic to make the teriyaki sauce.",
+        "Place the chicken in a large, shallow dish and pour the teriyaki sauce over it, turning the chicken to coat it evenly.",
+        "Cover the dish with plastic wrap and marinate the chicken in the refrigerator for at least 30 minutes, or up to 24 hours.",
+        "Preheat the oven to 375°F (190°C) and line a baking sheet with parchment paper.",
+        "Remove the chicken from the marinade and discard the remaining marinade.",
+        "Place the chicken on the prepared baking sheet and bake for 25-30 minutes, or until cooked through and the internal temperature reaches 165°F (75°C).",
+        "Serve the chicken with rice and steamed vegetables, if desired."
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Paprika pork",
+      "author": "Good Food Team",
+      "country": "Italy",
+      "description": "This healthy one-pot is a midweek miracle. Pork and mushrooms are cooked in a cream sauce that's flavoured with smoked paprika to make a hearty stew. Serve with rice, noodles or potatoes.",
+      "flagurl": "https://flagcdn.com/it.svg",
+      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-525506_11-cac1001.jpg?quality=90&webp=true&resize=440,400",
+      "instructions": [
+        "Heat the oil in a large pan, tip in the onions and cook for 10 mins until soft and golden. Add the pork and mushrooms and cook on a high heat for 3-4 mins until browned. Add the paprika and cook for 1 min more.",
+        "Stir in the tomato purée, then pour on the stock and simmer for 5-8 mins until the pork is cooked through. Finally, mix in the soured cream and some seasoning. Serve with egg noodles, tagliatelle or rice, and an extra dollop of soured cream, if you like."
+      ],
+      "ingredients": [
+        {
+          "item": "Olive Oil",
+          "quantity": "1",
+          "unit": "tablespoon"
+        },
+        {
+          "item": "Onions",
+          "quantity": "2",
+          "unit": "Slice"
+        },
+        {
+          "item": "Pork Fillet",
+          "quantity": "400",
+          "unit": "gram"
+        },
+        {
+          "item": "Sliced pack mushroom",
+          "quantity": "250",
+          "unit": "gram"
+        },
+        {
+          "item": "Smoked Paprika",
+          "quantity": "1.5",
+          "unit": "tablespoon"
+        },
+        {
+          "item": "Tomato Puree",
+          "quantity": "1",
+          "unit": "tablespoon"
+        },
+        {
+          "item": "Chicken Stock",
+          "quantity": "200",
+          "unit": "ml"
+        },
+        {
+          "item": "Soured Cream",
+          "quantity": "100",
+          "unit": "ml"
+        }
+      ]
     }
   ]
 }

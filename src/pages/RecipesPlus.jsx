@@ -6,7 +6,7 @@ const RecipesPlus = () => {
 const [ countryList, setCountryList ] = useState([]);
 const [ data, setData ] = useState([]);
 const [ instruction, setInstruction ] = useState(['']);
-const [ingredient, setIngredient] = useState([{item:'', quantity:''}]);
+const [ingredient, setIngredient] = useState([{item:'', quantity:'', unit:''}]);
 const [ uploadRecipe, setUploadRecipe ] = useState({
         id: '',
         name: '',
@@ -20,7 +20,6 @@ const [ uploadRecipe, setUploadRecipe ] = useState({
         });
 
 useEffect(() => {
-    // setIsLoading(true)
     axios.get('https://restcountries.com/v3.1/all/')
     .then((res) => {
     setData(res.data)
@@ -40,7 +39,7 @@ const inputHandler = (e) => {
       setUploadRecipe({...uploadRecipe,  [e.target.name]:e.target.value})
     };
 
-const flagHandler = (e) => {
+const countryDetailsHandler = (e) => {
     data.map((item, index) => { 
         let flagimg = e.target.value;
         if (flagimg === item.name.common) { 
@@ -71,7 +70,7 @@ const instructionsHandler =(e, index)=>{
         }
 
 const addMoreInputsHandler = () => {
-    let addMore = {item: '', quantity: '' };
+    let addMore = {item: '', quantity: '', unit:'' };
         setIngredient([...ingredient, addMore]);
     };
 
@@ -124,7 +123,7 @@ const submitHandler = (e) => {
                 </div>
                 <div className="form-group">
                 <label htmlFor="countries">Recipe Source</label>
-                <select name="country" onChange={flagHandler}>
+                <select name="country" onChange={countryDetailsHandler}>
                 <option value="selected">Select a country</option>
                 {countryList.map((item, index) => {
             return ( <option value={item} key={index}>{item} </option>);
@@ -149,6 +148,7 @@ const submitHandler = (e) => {
                 <div className="ingredientHeader">
                 <span htmlFor="item">Item</span>
                 <span htmlFor="quantity">Quantity</span>
+                <span htmlFor="quantity">Unit</span>
                 </div>
                 {ingredient.map((singleIngredient, index) => {
                     return ( 
@@ -157,6 +157,7 @@ const submitHandler = (e) => {
                     <div className="add-more">
                     <input type="text" name="item" id="item" value={singleIngredient.item} onChange={(e) => ingredientsHandler(e, index)}/>
                     <input type="text" name="quantity" id="quantity" value={singleIngredient.quantity} onChange={(e) => ingredientsHandler(e, index)}/>
+                    <input type="text" name="unit" id="unit" value={singleIngredient.unit} onChange={(e) => ingredientsHandler(e, index)}/>
                     </div>
                     <div className="remove more">
                         {ingredient.length > 1 && ( <button type='button' onClick={() => {removeMoreInputsHandler(index)}}>remove more</button>)}

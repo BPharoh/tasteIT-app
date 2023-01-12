@@ -13,7 +13,6 @@ const SingleRecipe = () => {
         setIsloading(true);
         axios.get(`http://localhost:3001/recipes/${params.singlerecipe}`).then(res => {
             setData(res.data);
-            console.log('single', res.data);
             setIsloading(false);
         });
     }, [params]);
@@ -22,39 +21,19 @@ const SingleRecipe = () => {
         return <p> Loading......</p>
     }
 
-    // {data.ingredients?.map((ingredient) => {
-    //     return (
-    //       <tr key={ingredient.ingredient}>
-    //         <td>
-    //         {ingredient.quantity}  -  {ingredient.ingredient}
-    //         </td>
-    //       </tr> );
-    // }
-    //   )}
-
-    // <h4 className={classes.heading}>Ingradients:</h4>
-    // {recipeDetails.ingredients &&
-    //   recipeDetails.ingredients.map((ingred, index) => {
-    //     return (
-    //       <div className={classes.ingredient} key={index}>
-    //         {ingred.quantity} - {ingred.ingredient}
-    //       </div>
-    //     );
-    //   })}
-
         return ( 
             <div>
             <h2>Title: {data.name}</h2>
              <h3>Author: {data.author}</h3>
              <h3>Source: {data.country}</h3>
-             <img src={data.flag} alt={data.country}/>
+             <img src={data.flagurl} alt={data.country}/>
              <p> Description: {data.description}</p>
             <img src={data.image} alt={data.name}/>
             <h4>Ingredients: </h4>
             {data.ingredients && data.ingredients.map((recipe, index) => {
               return (
                 <div key={index}>
-                {index + 1}:  {recipe.quantity} of {recipe.item}
+                 *   {recipe.item} - {recipe.quantity} -  {recipe.unit}
                 </div>
               );
             })}

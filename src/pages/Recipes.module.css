@@ -1,0 +1,18 @@
+.recipeslist {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+.recipeHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+.recipeHeader label, input {
+    min-width: 70px;
+    }

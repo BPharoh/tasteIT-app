@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
+import classes from './RecipesPlus.module.css';
 
 const RecipesPlus = () => {
 
@@ -30,9 +31,8 @@ useEffect(() => {
     return(countries)
     })
     setCountryList(countries);
-    console.log('RestAPI:', res.data);
     });
-    }, []);
+    }, [uploadRecipe]);
       
       
 const inputHandler = (e) => {
@@ -46,13 +46,10 @@ const countryDetailsHandler = (e) => {
     setUploadRecipe({...uploadRecipe,  flagurl: data[index].flags?.svg, country: data[index].name.common})
 }  
 return (e.target.value)
+
  })}
-        
 
-
-
-
-    //Ingredient //
+    //Ingredient Section
 const ingredientsHandler = (e, index) => {
     const {name, value} = e.target;
     const ingredientList = [...ingredient]
@@ -61,24 +58,28 @@ const ingredientsHandler = (e, index) => {
     setUploadRecipe({ ...uploadRecipe, ingredients: ingredient });
     };
 
-const instructionsHandler =(e, index)=>{
-    const {value} = e.target;
-    const instructionList = [...instruction]
-    instructionList[index] = value;
-    setInstruction(instructionList);
-    setUploadRecipe({ ...uploadRecipe, instructions: instruction });
-        }
-
 const addMoreInputsHandler = () => {
     let addMore = {item: '', quantity: '', unit:'' };
         setIngredient([...ingredient, addMore]);
     };
 
 const removeMoreInputsHandler = (index) => {
-    const ingredientList = [...ingredient]
-    ingredientList.splice(index, 1)
-        setIngredient(ingredientList);
-    };
+        const ingredientList = [...ingredient]
+        ingredientList.splice(index, 1)
+            setIngredient(ingredientList);
+        };
+
+
+    // Instructions Section
+
+
+const instructionsHandler =(e, index)=>{
+        const {value} = e.target;
+        const instructionList = [...instruction]
+        instructionList[index] = value;
+        setInstruction(instructionList);
+        setUploadRecipe({ ...uploadRecipe, instructions: instruction });
+            }
 
 const addMoreInstructionsHandler = () => {
     let allInstructions = '';
@@ -90,22 +91,20 @@ const removeMoreInstructionsHandler = (index) => {
     instructionList.splice(index, 1)
     setInstruction(instructionList);
     };
-
-const postHandler = (e) => {
-    axios.post("http://localhost:3001/recipes", uploadRecipe)
-    }
     
+    // Submit Handler
 const submitHandler = (e) => {
       e.preventDefault();
-      postHandler(uploadRecipe)
+      axios.post("http://localhost:3001/recipes", uploadRecipe)
       window.location.reload()
     };
 
     return (
         <div>
-            <h1>Add new recipe</h1>
+            
             <form action="" onSubmit={submitHandler}>
-                <div className="form-group">
+            <h1> Enter</h1>
+                <div className={classes.formGroup}>
                     <label htmlFor="name">Name:
                     <input 
                     type="text" 
@@ -120,14 +119,15 @@ const submitHandler = (e) => {
                     name="author"
                     onChange={inputHandler}
                      />
-                </div>
+                </div>  
                 <div className="form-group">
                 <label htmlFor="countries">Recipe Source</label>
                 <select name="country" onChange={countryDetailsHandler}>
                 <option value="selected">Select a country</option>
                 {countryList.map((item, index) => {
             return ( <option value={item} key={index}>{item} </option>);
-            })}</select>
+            })}
+        </select>
             </div>
                 <div className="form-group">
                     <label htmlFor="description">Description</label>

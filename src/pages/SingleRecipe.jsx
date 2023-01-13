@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {  useParams, useNavigate} from 'react-router-dom';
 import axios from 'axios';
+import classes from './SingleRecipe.module.css';
 
 
 const SingleRecipe = () => {
@@ -22,31 +23,40 @@ const SingleRecipe = () => {
     }
 
         return ( 
-            <div>
-            <h2>Title: {data.name}</h2>
-             <h3>Author: {data.author}</h3>
-             <h3>Source: {data.country}</h3>
-             <img src={data.flagurl} alt={data.country}/>
-             <p> Description: {data.description}</p>
-            <img src={data.image} alt={data.name}/>
-            <h4>Ingredients: </h4>
-            {data.ingredients && data.ingredients.map((recipe, index) => {
-              return (
-                <div key={index}>
-                 *   {recipe.item} - {recipe.quantity} -  {recipe.unit}
+          <>
+            <div className={classes.singleViewContainer }>
+              <div className={classes.topSection }>
+              <div className={classes.recipeInfo}>
+                <h2>Title: {data.name}</h2>
+                 <h3 >Author: {data.author}</h3>
+                 <h3 >Source: {data.country}</h3>
+                 <img src={data.flagurl} alt={data.country}/>
+                 <h2>Description: </h2>
+                <p > {data.description}</p>
+              </div>
+              <div className={classes.recipeIngredients }>
+                <h3>Ingredients: </h3>
+                 {data.ingredients && data.ingredients.map((recipe, index) => {
+                  return (
+                    <p key={index}>
+                      {recipe.quantity} - {recipe.unit} of  {recipe.item}
+                    </p>
+                  );
+                })} 
                 </div>
-              );
-            })}
-            <h4>Intructions: </h4>
-            {data.instructions && data.instructions.map((recipe, index) => {
-              return (
-                <div key={index}>
-                 Step {index + 1}: {recipe}
-                </div>
-              );
-            })}
-            <button onClick={()=> navigate(-1)}>Go back</button>
+              <div className={classes.recipeInstructions }>
+                <h3>Intructions: </h3>
+               <ol className={classes.directions}>
+               {data.instructions && data.instructions.map((recipe, index) => { return <p key={index}>{recipe}</p> })}
+                </ol>
+              </div>
+              </div>
+            <div className={ classes.bottomSection } >
+            <div className= {classes.recipeImage}><img src={data.image} alt={data.name}/></div>
+            </div>
         </div>
+        <button onClick={()=> navigate(-1)} className={classes.recipeNavigation}>Go back</button>
+        </>
         );       
     }  
 

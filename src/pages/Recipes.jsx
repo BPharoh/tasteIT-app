@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import RecipeCard from '../components/RecipeCard';
+import classes from './Recipes.module.css';
 
 const Recipes = () => {
     const [recipes, setRecipes ] = useState([]);
@@ -24,10 +25,12 @@ const searchedRecipes = recipes.filter((recipe) => {
 });
     return (
         <div>
-            <label htmlFor='search-recipes'>Search for recipe:</label>
-            <input type="text" name='search-recipes' id='search-recipes' onChange={findHandler}/>
-            <h1>Our Recipes</h1>
-            <div className="recipes-list">{searchedRecipes.map((recipe) => ( 
+            <div className={classes.recipeHeader}>
+                <h1>Our Recipes</h1>
+                <input type="text" name='search-recipes' id='search-recipes' onChange={findHandler} placeholder="Search for recipe"/>               
+            </div>
+         
+            <div className={classes.recipeslist}>{searchedRecipes.map((recipe) => ( 
                 <RecipeCard
                key={recipe.id} 
                name={recipe.name} 

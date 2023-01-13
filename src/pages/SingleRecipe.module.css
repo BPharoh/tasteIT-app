@@ -1,0 +1,63 @@
+.singleWiewContainer {
+    position: relative;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.topSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.recipeInfo {
+    position: relative;
+    padding: 1rem;
+}
+.recipeInfo h2, h3, p {
+   text-align: center;
+}
+.recipeInfo img {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    height: 70px;
+
+}
+
+.recipeIngredients {
+    padding: 1rem;
+    width: 50vw;
+    text-align: justify;
+}
+
+.recipeInstructions {
+    padding: 1rem;
+    width: 50vw;
+    text-align: left;
+    white-space: wrap;
+    overflow: auto;
+}
+
+.bottomSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+}
+.recipeImage  { 
+    position: absolute;
+    top: 12%;
+    right: 3%;
+}
+.recipeImage img {
+    height: 680px;
+    width: 40vw;
+}
+.recipeNavigation {
+    padding: 1rem;
+    background-color: darkgreen;
+    border-radius: 10%;
+    min-width: 50px;
+}

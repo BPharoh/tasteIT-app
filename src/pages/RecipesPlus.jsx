@@ -103,7 +103,7 @@ const submitHandler = (e) => {
         <div>
             
             <form action="" onSubmit={submitHandler}>
-            <h1> Enter</h1>
+            <h1> Enter Recipe Details</h1>
                 <div className={classes.formGroup}>
                     <label htmlFor="name">Name:
                     <input 
@@ -112,7 +112,7 @@ const submitHandler = (e) => {
                     onChange={inputHandler}
                     /></label>
                 </div>
-                <div className="form-group">
+                <div className={classes.formGroup}>
                     <label htmlFor="author">Author</label>
                     <input 
                     type="text" 
@@ -120,7 +120,7 @@ const submitHandler = (e) => {
                     onChange={inputHandler}
                      />
                 </div>  
-                <div className="form-group">
+                <div className={classes.formGroup}>
                 <label htmlFor="countries">Recipe Source</label>
                 <select name="country" onChange={countryDetailsHandler}>
                 <option value="selected">Select a country</option>
@@ -129,14 +129,16 @@ const submitHandler = (e) => {
             })}
         </select>
             </div>
-                <div className="form-group">
+                <div className={classes.formGroup}>
                     <label htmlFor="description">Description</label>
                     <textarea 
                     name="description" 
+                    cols="30"
+                    rows="6"
                     onChange={inputHandler}
                     />
                 </div>
-                <div className="form-group">
+                <div className={classes.formGroup}>
                     <label htmlFor="link">Image</label>
                     <input 
                     type="text" 
@@ -145,7 +147,7 @@ const submitHandler = (e) => {
                     />
                 </div>
                 <p>Ingredients</p>
-                <div className="ingredientHeader">
+                <div className={classes.ingredientsHeader}>
                 <span htmlFor="item">Item</span>
                 <span htmlFor="quantity">Quantity</span>
                 <span htmlFor="quantity">Unit</span>
@@ -153,26 +155,28 @@ const submitHandler = (e) => {
                 {ingredient.map((singleIngredient, index) => {
                     return ( 
                     <div key={index}>
-                    <div className="add-ingredients" >
-                    <div className="add-more">
+                    <div className={classes.addIngredients} >
+                    <div className={classes.addMore}>
                     <input type="text" name="item" id="item" value={singleIngredient.item} onChange={(e) => ingredientsHandler(e, index)}/>
                     <input type="text" name="quantity" id="quantity" value={singleIngredient.quantity} onChange={(e) => ingredientsHandler(e, index)}/>
                     <input type="text" name="unit" id="unit" value={singleIngredient.unit} onChange={(e) => ingredientsHandler(e, index)}/>
                     </div>
-                    <div className="remove more">
-                        {ingredient.length > 1 && ( <button type='button' onClick={() => {removeMoreInputsHandler(index)}}>remove more</button>)}
+                    <div className={classes.removeMore}>
+                        {ingredient.length > 1 && ( <button type='button' onClick={() => {removeMoreInputsHandler(index)}}>-</button>)}
                     </div>
                     </div>
-                    {(ingredient.length - 1 === index ) && (ingredient.length < 40) && (<button type='button' onClick={addMoreInputsHandler}>add more</button>)}
+                    {(ingredient.length - 1 === index ) && (ingredient.length < 40) && (<button className={classes.ingredients}  type='button' onClick={addMoreInputsHandler}>+Ingredients</button>)}
                     </div>
                 );
                 })}
-                  <label htmlFor="instructions">Instructions</label>
+                <div>
+                </div>
+                  <p>Instructions</p>
                 {instruction.map((allInstructions, index) => {
                     return ( 
-                <div className="form-group instructions" key={index}>
-                    <div className='instructions-group'>
-                    <div className="first-part">
+                <div  key={index}>
+                    <div className={classes.instructionsGroup}>
+                    <div className={classes.firstPart}>
                     <input 
                     type="text"
                     name="instructions" 
@@ -180,8 +184,8 @@ const submitHandler = (e) => {
                     onChange={(e) => instructionsHandler(e, index)}
                     />
                     </div>
-                    <div className="second-part">
-                {instruction.length > 1 && ( <button type='button' onClick={() => {removeMoreInstructionsHandler(index)}}>remove steps</button>)}
+                    <div className={classes.secondPart}>
+                {instruction.length > 1 && ( <button type='button' onClick={() => {removeMoreInstructionsHandler(index)}}>-</button>)}
                 </div>
                 </div>
                 

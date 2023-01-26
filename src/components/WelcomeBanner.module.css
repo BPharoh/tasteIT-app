@@ -1,0 +1,23 @@
+.welcomeBanner {
+    position: relative;
+}
+
+video {
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+    position: relative;
+    padding-top: 1rem;
+}
+  
+.introContainer {
+    width: 25vw;
+    height: 25vh;
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+}
+
+.introContainer p, h1 {
+    color: brown;
+}

@@ -6,12 +6,17 @@ import classes from './Layout.module.css';
 
 const Layout = () => {
     return (
-        <div className={classes.layoutContainer}>
-            <Navbar />
+        <div className={classes.layoutContainer}>     
+            <Navbar />  
+            <div className={classes.layoutContent}> 
             <Main />
-            <FootBar />          
-        </div>
+            </div>
+            <div className={classes.layoutFooter}>
+            <FootBar />  
+            </div>      
+            </div>      
     );
 };
 
 export default Layout;
+

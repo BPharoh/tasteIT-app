@@ -23,6 +23,7 @@
     top: 5%;
     right: 3%;
     height: 70px;
+    padding: 1rem;
 
 }
 
@@ -36,7 +37,6 @@
     padding: 1rem;
     width: 50vw;
     text-align: left;
-    white-space: wrap;
     overflow: auto;
 }
 
@@ -52,12 +52,15 @@
     right: 3%;
 }
 .recipeImage img {
-    height: 680px;
     width: 40vw;
+    height: 780px;
 }
 .recipeNavigation {
     padding: 1rem;
     background-color: darkgreen;
     border-radius: 10%;
     min-width: 50px;
+    margin-left: 25%;
 }
+
+

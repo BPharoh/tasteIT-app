@@ -10,20 +10,14 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 3rem; 
-    background-color:skyblue
 }
 
 .layoutContent {
-    padding-top: 3rem;
+    padding-top: 6rem;
     padding-bottom: 3rem;
   }
 
-.main {
-    list-style: none;
-    text-align: right;
-    background-color: bisque;
-}
+
 
 .navbar ul li {
     display: inline;
@@ -37,8 +31,7 @@ a.active {
   .layoutFooter {
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 3rem;  
+    width: 100%; 
     text-align: center;
-    background-color: skyblue
+    background-color: skyblue;
   }

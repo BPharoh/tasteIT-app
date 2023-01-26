@@ -16,3 +16,22 @@
 .recipeHeader label, input {
     min-width: 70px;
     }
+
+    .instructions {
+        white-space: pre-wrap;
+    }
+    
+    .ingredientsGroup {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .instructionsGroup {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .addIngredients {
+        display: flex;
+        flex-direction: row;
+    }

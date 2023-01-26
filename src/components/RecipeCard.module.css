@@ -1,4 +1,3 @@
-
 .RecipeCard {
     position: relative;
     background-color: rgb(200, 225, 225);
@@ -12,7 +11,7 @@
 
 .RecipeCard img {
     height: 300px;
-    width: 320px;
+    width: 100%;
 }
 
 .RecipeCard h2 {
@@ -27,8 +26,8 @@
     max-width: 70px;
 }
 .flag img{
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     object-fit: contain;
 }
 

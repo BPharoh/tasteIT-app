@@ -1,14 +1,18 @@
-.nav {
+.navBar {
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+nav {
     list-style: none;
     text-align: right;
-    background-color: black;
 }
-
-.nav ul li {
+nav ul li {
     display: inline;
-    padding: 5px;
+    padding: 3px;
 }
-
 a.active {
     color: coral;
 }

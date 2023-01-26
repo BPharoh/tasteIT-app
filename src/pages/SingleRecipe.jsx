@@ -27,9 +27,9 @@ const SingleRecipe = () => {
             <div className={classes.singleViewContainer }>
               <div className={classes.topSection }>
               <div className={classes.recipeInfo}>
-                <h2>Title: {data.name}</h2>
-                 <h3 >Author: {data.author}</h3>
-                 <h3 >Source: {data.country}</h3>
+                <h2>{data.name}</h2>
+                 <h3 >{data.author}</h3>
+                 <h3 >{data.country}</h3>
                  <img src={data.flagurl} alt={data.country}/>
                  <h2>Description: </h2>
                 <p > {data.description}</p>
@@ -54,8 +54,9 @@ const SingleRecipe = () => {
             <div className={ classes.bottomSection } >
             <div className= {classes.recipeImage}><img src={data.image} alt={data.name}/></div>
             </div>
+            <button onClick={()=> navigate(-1)} className={classes.recipeNavigation}>Go back</button>
         </div>
-        <button onClick={()=> navigate(-1)} className={classes.recipeNavigation}>Go back</button>
+       
         </>
         );       
     }  

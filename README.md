@@ -8,12 +8,11 @@ This program is conducted at the Helsinki Business College.
 
 This is an app where you can view reciepes of different countries and also add recipes of your choice using the add recipes form. 
 
-## Technologies and Resources Used.
-
-    - React
-    - Json Server
-    - Axios
-    - RestApi
+## Technologies and Resources Used
+    * React
+    * Json Server
+    * Axios
+    * RestApi
 
 This is an app where you can view reciepes of different countries and also add recipes of your choice using the add recipes form. 
 
